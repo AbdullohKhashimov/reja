@@ -1,0 +1,50 @@
+{
+  "name": "Tony",
+  "profession": "Software Engineer",
+  "age": 30,
+  "residence": "S.Korea",
+  "adress": "Seoul, S.Korea",
+  "languages": ["Uzbek", "English", "Korean"],
+  "skills": [
+    "HTML",
+    "CSS",
+    "JS",
+    "NodeJS",
+    "ReactJS",
+    "GraphQL",
+    "NestJS",
+    "NextJS",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "extra_skills": [
+    "Bootstrap",
+    "Tailwind Css",
+    "Sass",
+    "Flask",
+    "Git Knowledge"
+  ],
+  "work_place": "freelancer",
+  "service_desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse neque commodi voluptatum similique, soluta vel a porro tempora quia? Blanditiis sed iure pariatur! Hic natus maxime eligendi magni nam nostrum?",
+  "about_me": "A foreigner student who recently graduated school from Kyung Hee University. Residing in Seoul for 9+ years",
+  "city": "Andijan",
+  "title": ["flower", "seedlings", "gardner", "old", "new"],
+  "flower_desc": [
+    "Whit is a flower?",
+    "What is a seedling?",
+    "Who is gardner?"
+  ],
+  "flower_name": [
+    "Tulip",
+    "Daffodil",
+    "Rose",
+    "Poppy",
+    "Sunflower",
+    "Snowdrop",
+    "Cherry",
+    "blossom"
+  ],
+  "flower_price": ["155$", "45$", "200$", "30$", "20$", "12$", "5$", "7$"],
+  "famous_words": ["World is beautiful with flowers"],
+  "famous_name": ["Steve Jobs", "Khabib"]
+}
