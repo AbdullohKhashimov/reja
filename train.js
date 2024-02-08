@@ -5,18 +5,18 @@
  * Masalan: countLetter("e", "engineer") 3ni return qiladi
  */
 
-function countLetter(str, ele) {
+function count_letter(element, string) {
   let count = 0; // a variable to store the count of occurences
-  for (let i = 0; i < ele.length; i++) {
+  for (let i = 0; i < string.length; i++) {
     // condition to check if the character at the current position is equal to specific letter required!
-    if (ele[i] === str) {
+    if (string[i] === element) {
       count++; // if true increment by 1
     }
   }
   return count;
 }
-console.log(countLetter("b", "bubble-bus"));
-console.log(countLetter("e", "engineer"));
+console.log(count_letter("b", "bubble-bus"));
+console.log(count_letter("e", "engineer"));
 // charAt() = a method that returns the character at a specified index (position) in a string.
 
 // console.log("Jack Ma maslahatlari");
