@@ -29,6 +29,7 @@ console.log(count_letter("e", "engineer"));
 //   "endi dam oling baribir foydasi yoq", //60
 // ];
 
+// Callback functions
 // function maslahatBering(a, callback) {
 //   if (typeof a !== "number") callback("insert a number", null);
 //   else if (a <= 20) callback(null, list[0]);
