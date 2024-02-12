@@ -17,19 +17,21 @@ app.set("view engine", "ejs"); //view enjin ejs ekanligini korsatb beryapmz
 
 // 4: Router kodlari
 app.post("/create-item", function (req, res) {
-    console.log(req.body);
-    res.json({ test: "success" });
+  console.log(req.body);
+  res.json({ test: "success" });
 });
 app.get("/", function (req, res) {
-    res.render("harid"); // HTML formatda ham javobni client ga yuborish mumkun
-    // res.end("<h1> Our very first project </h1>");
+  res.render("reja"); // HTML formatda ham javobni client ga yuborish mumkun
+  // res.end("<h1> Our very first project </h1>");
 });
 
 // serverni hosil qilish
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function () {
-    console.log(`The server is running successfully on port: ${PORT}`);
+  console.log(
+    `The server is running successfully on port: ${PORT}, http://localhost:${PORT}`
+  );
 });
 
 // const Account = require("./account");
