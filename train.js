@@ -1,3 +1,7 @@
+// Task B
+//Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+//MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
+
 /**
  * A task:
  * Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan
@@ -5,18 +9,18 @@
  * Masalan: countLetter("e", "engineer") 3ni return qiladi
  */
 
-function count_letter(element, string) {
-  let count = 0; // a variable to store the count of occurences
-  for (let i = 0; i < string.length; i++) {
-    // condition to check if the character at the current position is equal to specific letter required!
-    if (string[i] === element) {
-      count++; // if true increment by 1
-    }
-  }
-  return count ? count : "there is no such alphabet";
-}
-console.log(count_letter("b", "bubble-bus"));
-console.log(count_letter("t", "engineer"));
+// function count_letter(element, string) {
+//   let count = 0; // a variable to store the count of occurences
+//   for (let i = 0; i < string.length; i++) {
+//     // condition to check if the character at the current position is equal to specific letter required!
+//     if (string[i] === element) {
+//       count++; // if true increment by 1
+//     }
+//   }
+//   return count ? count : "there is no such alphabet";
+// }
+// console.log(count_letter("b", "bubble-bus"));
+// console.log(count_letter("t", "engineer"));
 // charAt() = a method that returns the character at a specified index (position) in a string.
 
 // console.log("Jack Ma maslahatlari");
