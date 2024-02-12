@@ -21,7 +21,7 @@ app.post("/create-item", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-  res.render("harid");
+  res.render("reja");
 });
 
 const server = http.createServer(app);
