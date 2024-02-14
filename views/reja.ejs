@@ -48,7 +48,7 @@
             <button
               data-id="<%= item._id %>"
               id="clean-all"
-              class="btn btn-danger btn-sm"
+              class="delete-me btn btn-danger btn-sm"
               style="border-radius: 20px"
             >
               Ochirish
@@ -57,6 +57,9 @@
         </li>
         <% }) %>
       </ul>
+      <button id="clean-all" class="btn btn-danger" style="border-radius: 20px">
+        Hamma Rejalarni ochirish
+      </button>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/browser.js"></script>

@@ -4,6 +4,7 @@ const app = express();
 
 // MongoDB chaqirish:
 const db = require("./server").db();
+const mongoDB = require("mongodb");
 
 //1 enter code
 app.use(express.static("public"));
@@ -21,9 +22,18 @@ app.post("/create-item", (req, res) => {
   console.log("user entered /create-item");
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
-    console.log(data.ops);
     res.json(data.ops[0]);
   });
+});
+
+app.post("/delete-item", (req, res) => {
+  const id = req.body.id;
+  db.collection("plans").deleteOne(
+    { _id: new mongoDB.ObjectId(id) },
+    function (err, data) {
+      res.json({ state: "success" });
+    }
+  );
 });
 
 app.get("/", function (req, res) {
