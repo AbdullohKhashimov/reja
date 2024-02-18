@@ -1,3 +1,27 @@
+/*E-TASK: 
+
+Shunday function tuzing, 
+u bitta string argumentni qabul 
+qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"
+
+@MITASK
+*/
+
+function get_reverse(str) {
+  // empty string
+  let new_string = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    new_string += str[i];
+  }
+  return new_string;
+}
+const result = get_reverse("hello");
+console.log("result:", result);
+
+const result2 = get_reverse("koobkrow");
+console.log("result2:", result2);
+
 // Task D:
 /*D-TASK: 
 
@@ -7,25 +31,25 @@ hamda agar har ikkala string bir hil harflardan iborat
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 */
 
-const checkContent = (a, b) => {
-  const arr = b.split("");
-  const new_arr = [];
-  for (let i = 0; i < arr.length; i++) {
-    let count = 0;
-    if (a.length === arr.length && a.includes(arr[i])) {
-      count++;
-    }
-    new_arr.push(count);
-  }
-  if (new_arr.includes(0)) {
-    return false;
-  } else {
-    return true;
-  }
-};
+// const checkContent = (a, b) => {
+//   const arr = b.split("");
+//   const new_arr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let count = 0;
+//     if (a.length === arr.length && a.includes(arr[i])) {
+//       count++;
+//     }
+//     new_arr.push(count);
+//   }
+//   if (new_arr.includes(0)) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// };
 
-const result = checkContent("mitgroup", "groupmti");
-console.log(result);
+// const result = checkContent("mitgroup", "groupmti");
+// console.log(result);
 
 // Task C:
 //Shunday class tuzing nomi Shop va uni constructoriga 3 hil mahsulot pass bolsin,
