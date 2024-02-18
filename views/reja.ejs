@@ -15,7 +15,8 @@
   </head>
   <body style="background-color: #b8bbd1">
     <div class="container">
-      <h1 class="display-4 text-center py-1">Reja va Maqsadlar</h1>
+      <h1 class="display-4 text-center py-1">Plans and Goals</h1>
+
       <div class="jumbotron p-3 shadow-sm">
         <form id="create-form" action="/create-item" method="POST">
           <div class="d-flex align-items-center">
@@ -29,7 +30,7 @@
               style="flex: 1"
             />
             <button class="btn btn-primary" style="border-radius: 20px">
-              Add new plan
+              Add new goal
             </button>
           </div>
         </form>
@@ -40,16 +41,16 @@
         <li
           class="list-group-item list-group-item-info d-flex align-items-center justify-content-between"
         >
-          <span class="item-text"> <%=item.reja %> </span>
+          <span class="item-text"> <%=item.reja%> </span>
           <div>
             <button
-              data-id="<%= item._id %>"
+              data-id="<%=item._id%>"
               class="edit-me btn btn-secondary btn-sm mr-1"
             >
               Edit
             </button>
             <button
-              data-id="<%= item._id %>"
+              data-id="<%=item._id%>"
               class="delete-me btn btn-danger btn-sm"
               style="border-radius: 20px"
             >

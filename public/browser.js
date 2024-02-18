@@ -8,18 +8,17 @@ function itemTemplate(item) {
           <span class="item-text"> ${item.reja} </span>
           <div>
             <button
-              data-id=" ${item._id} "
+              data-id="${item._id}"
               class="edit-me btn btn-secondary btn-sm mr-1"
             >
-              Ozgartirish
+              Edit
             </button>
             <button
-              data-id=" ${item._id} "
-              id="clean-all"
-              class="btn btn-danger btn-sm"
+              data-id="${item._id}"
+              class="delete-me btn btn-danger btn-sm"
               style="border-radius: 20px"
             >
-              Ochirish
+              Delete
             </button>
           </div>
         </li>
@@ -40,23 +39,20 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
       createField.value = "";
       createField.focus();
     })
-    .catch((err) => {
-      console.log("Iltimos qaytadan harakat qilib koring!", err);
-    });
+    .catch((err) => console.log("Could not get data", err));
 });
 
 document.addEventListener("click", function (e) {
   // delete operations
   if (e.target.classList.contains("delete-me")) {
-    if (confirm("Aniq ochirmoqchimsz?")) {
+    if (confirm("Are you Sure to delete")) {
       axios
         .post("/delete-item", { id: e.target.getAttribute("data-id") })
         .then((response) => {
-          console.log(response.data);
           e.target.parentElement.parentElement.remove();
         })
         .catch((err) => {
-          conso.log("Iltimos qaytadan harakat qilib koring!", err);
+          console.log("Couldnot delete smth missed", err);
         });
     }
   }
@@ -64,7 +60,7 @@ document.addEventListener("click", function (e) {
   // edit operations
   if (e.target.classList.contains("edit-me")) {
     let userInput = prompt(
-      "Ozgartirish kiriting!",
+      "Edit your Task",
       e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
     );
     if (userInput) {
@@ -74,13 +70,12 @@ document.addEventListener("click", function (e) {
           new_input: userInput,
         })
         .then((response) => {
-          console.log(response.data);
           e.target.parentElement.parentElement.querySelector(
             ".item-text"
           ).innerHTML = userInput;
         })
         .catch((err) => {
-          console.log("Iltimos qaytadan harakat qilib koring!");
+          console.log("Cannot edit item", err);
         });
     }
   }
@@ -95,6 +90,6 @@ document.getElementById("clean-all").addEventListener("click", function () {
       document.location.reload();
     })
     .catch((err) => {
-      console.log("Iltimos qaytadan harakat qilib koring!");
+      console.log("try agian to delete", err);
     });
 });
