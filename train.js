@@ -1,3 +1,28 @@
+/*F-TASK: 
+
+Shunday findDoublers function tuzing, 
+unga faqat bitta string argument pass bolib, 
+agar stringda bir hil harf qatnashgan bolsa true, 
+qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+
+@MITASK
+*/
+
+const getDoublers = (str) => {
+  // convert the string to array
+  const arr = str.split("");
+  const new_arr = [...new Set(arr)];
+
+  if (arr.length !== new_arr.length) {
+    return true;
+  } else {
+    return false;
+  }
+};
+const result = getDoublers("hello");
+console.log("result:", result);
+
 /*E-TASK: 
 
 Shunday function tuzing, 
@@ -8,19 +33,19 @@ MASALAN: getReverse("hello") return qilsin "olleh"
 @MITASK
 */
 
-function get_reverse(str) {
-  // empty string
-  let new_string = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    new_string += str[i];
-  }
-  return new_string;
-}
-const result = get_reverse("hello");
-console.log("result:", result);
+// function get_reverse(str) {
+//   // empty string
+//   let new_string = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     new_string += str[i];
+//   }
+//   return new_string;
+// }
+// const result = get_reverse("hello");
+// console.log("result:", result);
 
-const result2 = get_reverse("koobkrow");
-console.log("result2:", result2);
+// const result2 = get_reverse("koobkrow");
+// console.log("result2:", result2);
 
 // Task D:
 /*D-TASK: 
