@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*G-TASK: 
 
 Shunday function tuzingki unga integerlardan iborat
@@ -107,13 +108,20 @@ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 // console.log(result);
 
 // Task C:
+=======
+// Task D:
+>>>>>>> develop
 //Shunday class tuzing nomi Shop va uni constructoriga 3 hil mahsulot pass bolsin,
 // hamda classning 3 ta methodi bolsin, biri qoldiq, biri sotish va biri qabul. Har bir method
 // ishga tushgan vaqt ham log qilinsin.
 // Masalan: const shop = new Shop(4,5,2) shop.qoldiq() return hozir 20:40 4ta non, 5ta lagmon
 // va 2ta cola mavjud! shop.sotish("non", 3) & shop.qabul("cola", 4) & shop.qoldiq() return hozir 20:50 ta 1ta non va 5 ta lagmon va 6ta cola mavjud
 
+<<<<<<< HEAD
 /* let now = new Date();
+=======
+let now = new Date();
+>>>>>>> develop
 let hour = now.getHours();
 let minute = now.getMinutes();
 minute = minute < 10 ? "0" + minute : minute;
@@ -177,7 +185,10 @@ class Shop {
 const trade = new Shop(6, 2, 4);
 console.log(trade.sotish("cola", 2));
 console.log(trade.qabul("non", 2));
+<<<<<<< HEAD
 */
+=======
+>>>>>>> develop
 
 // Task B:
 //Shunday function tuzing, u 1ta string parametrga ega bolsin,
